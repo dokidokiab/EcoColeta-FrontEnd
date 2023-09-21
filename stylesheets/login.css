@@ -1,0 +1,108 @@
+
+/* Styles para dispositivos Android 
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 16px; 
+        background-color: #f5f5f5; 
+    }
+}
+
+/* Styles para dispositivos non-Android 
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: #8FDC97
+    }
+}
+*/
+
+body{
+    background: rgb(98, 165, 117);
+    background: radial-gradient(circle, rgb(98, 165, 117) 0%, rgb(219, 100, 100) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.tela{
+    background-color: #221e1e6b;
+    border-radius: 30px;
+    
+    width: 360px;
+    height: 680px;
+}
+
+#logo img{
+    width: 160px;
+    margin: 40px;
+}
+
+#logo{
+    position: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+
+.input{
+    width: 100%;
+    font-family: Catamaran, Medium;
+    line-height: 28px;
+    padding-left: 3rem;
+    margin: 20px 0;
+    border-radius: 30px;
+    outline: 0;
+    height: 25px;
+    background-color: #00000000;
+    border-color: #1F4723;
+    border-style: solid;
+    border-width: 0.01rem;
+    
+}
+
+.input::placeholder {
+    color: #7F9D82; 
+    font-family: Catamaran, Medium;
+    font-size: 14px; 
+    font-weight: normal; 
+}
+
+.group {
+    display: flex;
+    line-height: 40px;
+    align-items: center;
+    position: relative;
+    max-width: 300px;
+  }
+
+h3{
+    margin: 0;
+    font-family: Catamaran, Medium;
+    color: #F5F5F5;
+    letter-spacing: 2px;
+}
+
+.icon {
+    position: absolute;
+    left: 1rem;
+    fill: none;
+    width: 1rem;
+    height: 1rem;
+  }
+
+button{
+    margin: 20px 0;
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+    padding: 1px;
+    border: none;
+    border-radius: 30px;
+    background-color: #4F9556;
+
+    transition: all 0.1s linear;
+}
+
+button:active {
+    transform: scale(0.95);
+   }
