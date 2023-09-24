@@ -1,5 +1,21 @@
 
+/* Styles para dispositivos Android 
+@media only screen and (max-width: 767px) {
+    body {
+        background-color: #; 
+    }
+}
+
+/* Styles para dispositivos non-Android 
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: #
+    }
+}
+*/
+
 body{
+            /*fundo com degrade radius, usei o site "cssgradient.io" */
     background: rgb(98, 165, 117);
     background: radial-gradient(circle, rgb(98, 165, 117) 0%, rgb(219, 100, 100) 100%);
     display: flex;
@@ -23,7 +39,7 @@ h1{
     margin: 40px;
 }
 
-
+            /*textfield*/
 .input{
     width: 100%;
     font-family: Catamaran, Medium;
@@ -63,6 +79,7 @@ h1{
   }
 
 
+            /*icones dos txtfields*/
 .icon {
     position: absolute;
     left: 1rem;

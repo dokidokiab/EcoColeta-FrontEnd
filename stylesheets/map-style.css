@@ -1,0 +1,59 @@
+html, body {
+    height: 500px;
+    width: 1250px;
+    margin: 0;
+    padding: 0;
+    
+                /*fundo com degrade radius, usei o site "cssgradient.io" */
+    background: rgb(98, 165, 117);
+    background: radial-gradient(circle, rgb(98, 165, 117) 0%, rgb(219, 100, 100) 100%);
+}
+
+.search {
+    transform: translateY(-90%); /*esconde a barra em cima*/
+    position: absolute;
+    z-index: 2;
+    background-color: #333;
+    transition: ease-in 0.6s; /* Adiciona uma transição suave ao mostrar/ocultar */
+    width: 100%;
+    background-color: #71BE78;
+}
+
+                /*aparece a navbar*/
+.search:hover{
+    transform: translateY(0%);
+}
+
+#map { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    width: 100%;
+    background-color: #ddd;
+}
+
+#job_location, #my_location {
+    width: 440px; 
+    height: 30px;
+    color: #FFFFFF; 
+    border: none; 
+    background-color: #229e64;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    
+} 
+
+#job_location::placeholder, #my_location::placeholder {
+    color: #327757;
+}
+
+#job_location:hover, #my_location:hover {
+    background-color: #145f3c;
+    border: none;
+}
+
