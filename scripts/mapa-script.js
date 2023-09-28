@@ -34,7 +34,7 @@ class CenterControl {
         this.controlUI.appendChild(this.controlText);
 
         this.controlUI.addEventListener('click', () => {
-            // Crie uma div vazia
+            // Criando uma div vazia
             var div = document.createElement('div');
             
             // Definindo os estilos da div
@@ -42,10 +42,10 @@ class CenterControl {
             div.style.height = '50px';
             div.style.backgroundColor = 'white';
             div.style.position = 'absolute'; // Posição absoluta em relação ao mapa
-            div.style.top = '50px'; // Ajuste a posição vertical conforme necessário
-            div.style.left = '50px'; // Ajuste a posição horizontal conforme necessário
+            div.style.top = '50px'; 
+            div.style.left = '50px'; 
 
-            // Adicione a div ao elemento do mapa
+          
             document.getElementById('map').appendChild(div);
         });
 
@@ -391,12 +391,12 @@ function updateMap(latlon) {
                 ]
             }
         ]
-        // Restante das opções do mapa aqui
+    
     };
 
     map = new google.maps.Map(document.getElementById('map'), myOptions);
 
-    // Adicione outros controles e ouvintes de eventos conforme necessário
+    // Adiciona outros controles e ouvintes de eventos 
     const centerControl = new CenterControl(map);
     const meuLocalControl = new MeuLocalControl(map);
 
@@ -410,8 +410,8 @@ function updateMap(latlon) {
             map: map,
             title: 'Adicionar descarte',
             icon: {
-                url: '/img/coringa.png', // URL da imagem do ícone
-                scaledSize: new google.maps.Size(64, 64), // Tamanho personalizado
+                url: '/img/coringa.png', 
+                scaledSize: new google.maps.Size(64, 64), 
             },
             animation: google.maps.Animation.DROP,
             draggable: false
@@ -467,14 +467,14 @@ function geocodeLatLng(geocoder, lat, lon) {
                 }
             }).catch((e) => {
                 console.error('Erro no geocodificador:', e);
-                // Aqui você pode mostrar uma mensagem de erro ao usuário ou tomar outras medidas apropriadas.
+                
             });
         } else {
             alert("Coordenadas inválidas");
         }
     } catch (error) {
         console.error('Erro inesperado no geocodificador:', error);
-        // Lidar com o erro de maneira apropriada, como mostrar uma mensagem de erro ao usuário.
+        
     }
 }
 
@@ -493,7 +493,7 @@ function geocodeLatLng(geocoder, lat, lon) {
     try {
         const request = {
             travelMode: google.maps.TravelMode.DRIVING,
-            origin: userLocation, // Sua localização atual (centerMap)
+            origin: userLocation,
             destination: destinationLocation, // Coordenadas do destino selecionado
         };
 
@@ -501,11 +501,11 @@ function geocodeLatLng(geocoder, lat, lon) {
             directionsRenderer.setDirections(response);
         }).catch((error) => {
             console.error('Erro ao calcular a rota:', error);
-            // Trate o erro de acordo com suas necessidades
+            
         });
     } catch (error) {
         console.error('Erro inesperado ao calcular a rota:', error);
-        // Lidar com o erro de maneira apropriada
+        
     }
 }
 
@@ -811,7 +811,7 @@ function initMap() {
             map: map,
             title: 'Adicionar descarte',
             icon: '/img/coringa.png',
-            animation: google.maps.Animation.DROP,//BOUNCE
+            animation: google.maps.Animation.DROP,
             draggable: false
         });
 
