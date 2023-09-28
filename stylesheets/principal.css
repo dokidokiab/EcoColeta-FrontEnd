@@ -1,7 +1,7 @@
 body{
             /*fundo com degrade radius, usei o site "cssgradient.io" */
-    background: rgb(98, 165, 117);
-background: radial-gradient(circle, rgb(98, 165, 117) 0%, rgb(219, 100, 100) 100%);
+            background: rgb(98, 165, 117);
+            background: radial-gradient(circle, rgb(98, 165, 117) 0%, rgb(25 113 33) 100%);
 }
 
 /* Estilo para o cabeçalho (header) e navbar */

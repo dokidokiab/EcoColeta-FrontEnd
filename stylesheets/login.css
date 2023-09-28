@@ -16,7 +16,7 @@
 
 body{
     background: rgb(98, 165, 117);
-    background: radial-gradient(circle, rgb(98, 165, 117) 0%, rgb(219, 100, 100) 100%);
+    background: radial-gradient(circle, rgb(98, 165, 117) 0%, rgb(12, 87, 30) 100%);
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Descarte</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/cadastroColeta.css">
+    <link rel="stylesheet" href="stylesheets/map-style.css">
+    <link rel="shortcut icon" href="images/logo3.png" type="image/x-icon">
+</head>
+<body>
+    <div id="header">
+        <h1>Selecione o tipo de material a ser descartado:</h1>
+        <form>
+            <div id="material-selection-form">
+            <label for="plastico"><input type="checkbox" id="plastico" name="material"> Plástico</label>
+            <label for="papel"><input type="checkbox" id="papel" name="material"> Papel</label>
+            <label for="metal"><input type="checkbox" id="metal" name="material"> Metal</label>
+            <label for="vidro"><input type="checkbox" id="vidro" name="material"> Vidro</label>
+            <label for="madeira"><input type="checkbox" id="madeira" name="material"> Madeira</label>
+            </div>
+            <br>
+            <div id="location">
+            <label for="latitude">Latitude:</label>
+            <input type="text" id="latitude" name="latitude">
+            <label for="longitude">Longitude:</label>
+            <input type="text" id="longitude" name="longitude">
+            </div>
+            <br>
+            <button id="concluir" type="submit">Concluir</button>
+            <br><br>
+        </form>        
+    </div>    
+    <!--
+    <div id="map"></div>
+    <script src="scripts/mapMorador.js"></script>
+    
+    <script src="scripts/mapa-script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6jbXU6rzzlIPpJvtIYA9TUWeSpAnPiOE&libraries=places&callback=initMap" async defer></scri -->
+    <div id="main">
+        <img src="images/mapa.png" alt="Localização atual do material descartado">    
+    </div>
+    <script src="scripts/cadastroColeta.js"></script> 
+</body>
+</html>

@@ -1,0 +1,91 @@
+body {
+    font-family: Catamaran, Medium;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+}
+
+#header {
+    background-color: #71BE78;
+    text-align: center;
+    width: 85%;
+
+}
+
+#header h1 {
+    color: white;
+    
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 85%;
+    background-color: #173304;
+}
+
+
+/* ... outros estilos ... */
+
+#material-selection-form {
+    background-color: #71BE78;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+#material-selection-form label {
+    margin-right: 20px;
+    margin-bottom: 10px; /* Adicione este estilo para espaçamento vertical */
+}
+
+#material-selection-form input[type="text"] {
+    width: 200px;
+    margin-bottom: 10px;/* Adicione este estilo para espaçamento vertical */
+    padding-left: 0px;
+}
+
+button {
+    background-color: #242F3E;
+    color: white;
+    border: none;
+    padding: 7px 30px;
+    cursor: pointer;
+    margin-top: 10px; 
+    border-radius: 30px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+
+input{
+    color: #173304; 
+    font-family: Catamaran, Medium;
+    font-size: 14px; 
+    font-weight: normal; 
+}
+
+
+#location label {
+    font-family: Catamaran, Medium;
+    color: white;
+}
+
+#location input[type="text"] {
+    color: #173304; 
+    font-family: Catamaran, Medium;
+    font-size: 14px; 
+    font-weight: normal; 
+    margin-right: 20px;
+}

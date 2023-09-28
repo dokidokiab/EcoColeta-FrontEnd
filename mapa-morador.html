@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mapa Eco</title>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0">
+<link rel="shortcut icon" href="images/logo3.png" type="image/x-icon">
+<link rel="stylesheet" href="stylesheets/map-style.css">
+
+</head>
+
+<body>
+
+    <div class="menu-dropdown">
+        <button id="botao-flutuante">+</button>
+        <ul id="opcoes-menu" class="esconder">
+          <li><a href="cadastroColeta.html" >Solicitar Coleta</a></li>
+          <!--<li><a href="#">Opção 2</a></li>-->
+        </ul>
+      </div>
+
+
+    <!---<div class="search"> -->
+        
+        <!--                                A ideia aqui era adicionar um container com checkboxes escondido e aparecia depois 
+        <div class="checkbox-container">
+            <label>
+                <input type="checkbox" name="opcao1"> Opção 1
+            </label>
+            <label>
+                <input type="checkbox" name="opcao2"> Opção 2
+            </label>
+            <label>
+                <input type="checkbox" name="opcao3"> Opção 3
+            </label>
+        </div>-->
+
+        
+
+
+        <!--div com  os txtfield de pesquisa-->
+        <div class="search"> 
+            <input type="text" name="my_location" id="my_location" placeholder="Onde estou..." value="" />
+            <input type="text" name="job_location" id="job_location" placeholder="Escolha o local..." value="" /> 
+        </div>
+    </div>
+
+    
+  
+
+    <!--obviamente o mapa-->
+    <script src="scripts/mapMorador.js"></script>
+    <div id="map"></div>
+    <script src="scripts/mapa-script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6jbXU6rzzlIPpJvtIYA9TUWeSpAnPiOE&libraries=places&callback=initMap" async defer></script>
+
+</body>
+
+</html>

@@ -1,33 +1,37 @@
 html, body {
     height: 500px;
-    width: 500px;
-    margin: auto;
-    padding: 5px;
+    width: 1250px;
+    margin: 0;
+    margin-left: 25px;
+    padding: 0;
+    
+                /*fundo com degrade radius, usei o site "cssgradient.io" */
+    background: rgb(98, 165, 117);
+    background: radial-gradient(circle, rgb(64, 189, 100) 0%, rgb(98, 165, 117) 100%);
 }
 
 .search {
-    width: 500px;
-    background-color: rgb(31, 155, 97);
-    border-radius: 10px 10px 0px 0px;
-    padding-top: 5px;
+    transform: translateY(-90%); /*esconde a barra em cima*/
+    position: centralizar;
+    z-index: 2;
+    background-color: #333;
+    transition: ease-in 0.6s; /* Adiciona uma transição suave ao mostrar/ocultar */
+    width: 100%;
+    background-color: #71BE78;
 }
 
-.box_confirmation {
-    background-color: #fff;
-    border: 2px solid #145f3c;
-    border-radius: 10px;
-    color: #333;
-    display: inline-block;
-    font: 16px/24px sans-serif;
-    padding: 12px 24px;
-    position: relative;
-    width: 450px;
-    height: 100px;
-    margin-bottom: 5px;
+                /*aparece a navbar*/
+.search:hover{
+    transform: translateY(0%);
 }
 
 #map { 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%; 
+    width: 100%;
     background-color: #ddd;
 }
 
@@ -36,11 +40,13 @@ html, body {
     height: 30px;
     color: #FFFFFF; 
     border: none; 
-    background-color: #145f3c;
+    background-color: white;
+    /*background-color: rgb(140, 216, 162);
+    background-color: #229e64;*/
     border-radius: 8px;
     font-size: 20px;
     margin-top: 5px;
-    margin-left: 18px;
+    margin-left: 25px;
     margin-bottom: 10px;
     padding-left: 20px;
     
@@ -51,6 +57,144 @@ html, body {
 }
 
 #job_location:hover, #my_location:hover {
-    background-color: #09d978;
+    background-color: #327757;
+    /*background-color: #145f3c; */
     border: none;
 }
+
+/* Estilos para o botão flutuante */
+#botao-flutuante {
+      text-decoration: none;
+      color: white;
+      box-shadow: 3px 3px 10px #333;
+      position: absolute;
+      bottom: -600px; /* Distância do canto inferior da tela */
+      left: 1240px; /* Distância do canto esquerdo da tela */
+      background-color: #327757; 
+      border-radius: 50%; /*  botão circular */
+      width: 70px; /* Largura do botão */
+      height: 70px; /* Altura do botão */
+      text-align: center;
+      line-height: 60px; 
+      font-size: 45px; 
+      font-weight: bold;
+      cursor: pointer; /* Cursor do mouse como ponteiro */
+      display: inline-block;
+}
+
+ /* Estilos para a imagem dentro do botão */
+ #botao-flutuante img {
+    width: 40px; /* Largura da imagem */
+    height: 40px; /* Altura da imagem */
+    margin-top: 10px; /* Espaçamento superior para centralizar a imagem verticalmente */
+  }
+
+
+  /* Estilo para ocultar as opções do menu por padrão */
+.esconder {
+    display: none;
+  }
+  
+  /* Estilo para o menu-dropdown */
+  .menu-dropdown {
+    position: relative;
+    display: inline-block;
+    color: white;
+  }
+  
+  /* Estilo para as opções do menu */
+  #opcoes-menu {
+    list-style-type: none;
+    color: white;
+    padding: 10;
+    margin: 100;
+    width: 180px;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    position: absolute;
+    margin-bottom:500px; /* Distância do canto inferior da tela */
+    margin-left: 1030px;
+    margin-top: 575px;
+  }
+  
+  #opcoes-menu li {
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  #opcoes-menu li:hover {
+    background-color: #F0F0F0;
+   
+    
+  }
+
+  a {
+    color: #327757; /* Cor do link normal */
+    
+  }
+  
+  /* Remove o sublinhado padrão do link */
+  a {
+    text-decoration: none;
+    font-size: 50;
+    
+  }
+  
+  /* sublinhado quando o mouse estiver sobre o link */
+  a:hover {
+    text-decoration: none;
+  }
+  
+  /* Altera a cor do texto do link quando o mouse estiver sobre ele */
+  a:hover {
+    color: #327757; /* Cor do link no efeito hover */
+  }
+
+  /*solicitar coleta modal
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: background-color: #71BE78;
+    z-index: 1; /* Coloca o modal sobre outros elementos 
+  } 
+  
+  /* Estilo para o conteúdo do modal 
+  .modal-conteudo {
+    background-color: #FFFFFF;
+    margin: 20% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    border-radius: 4px;
+  }
+  
+   Estilo para o botão de fechar o modal
+  .fechar-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  /*  Estilo para o botão de abrir o modal (link) 
+  #abrir-modal {
+    color: blue; /* Cor do link (você pode ajustar a cor conforme necessário) 
+    text-decoration: underline; /* Sublinhado para indicar que é um link
+    cursor: pointer;
+  }
+  
+  /* Estilo para o botão de abrir o modal quando está em hover (opcional) 
+  #abrir-modal:hover {
+    text-decoration: none; /* Remover sublinhado no hover, se desejar 
+  } */
+
+
+ 
