@@ -72,7 +72,7 @@ class MeuLocalControl {
 
         this.controlText.style.textAlign = 'center';
         this.controlText.style.color = '#333';
-        this.controlText.innerHTML = '<img style="width: 30px;" src="/img/gps.png" />';
+        this.controlText.innerHTML = '<img style="width: 30px;" src="/images/gps.png" />';
 
         this.controlUI.appendChild(this.controlText);
 
@@ -112,7 +112,7 @@ function showPosition(position) {
         position: latlon,
         map: map,
         title: 'Minha Localização',
-        icon: '/img/point.png',
+        icon: '/images/mapSelectedIcon.svg',
         animation: google.maps.Animation.DROP,
         draggable: false
     });
@@ -410,7 +410,7 @@ function updateMap(latlon) {
             map: map,
             title: 'Adicionar descarte',
             icon: {
-                url: '/img/coringa.png', 
+                url: '/images/coringa.svg', 
                 scaledSize: new google.maps.Size(64, 64), 
             },
             animation: google.maps.Animation.DROP,
@@ -810,7 +810,7 @@ function initMap() {
             position: clickPosition,
             map: map,
             title: 'Adicionar descarte',
-            icon: '/img/coringa.png',
+            icon: '/images/coringa.svg',
             animation: google.maps.Animation.DROP,
             draggable: false
         });
