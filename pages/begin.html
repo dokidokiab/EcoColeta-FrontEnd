@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Coleta - App de Coleta Seletiva</title>
+    <link rel="stylesheet" href="../stylesheets/principal.css">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+</head>
+<body>
+                    <!--Barra de navegação-->
+    <header>
+        <nav>
+            <ul>
+                <img src="../images/logo.png" alt="">
+                <li><a class="navlink" href=".esquerdaMsg"><h3>Página Inicial</h3></a></li>
+                <li><a class="navlink" href="#ComoFunciona"><h3>Como Funciona</h3></a></li>
+                <li><a class="navlink" href="#"><h3>Serviços</h3></a></li>
+                <li><a class="navlink" href="#"><h3>Contato</h3></a></li>
+                <button class="buttonClass" href=""><a href="login.html">Login</a></button>
+            </ul>
+            
+        </nav>
+    </header>
+
+                    <!--Primeira parte da tela-->
+    <aside>
+        <div id="esquerdaMsg">
+            <div>
+                <h2>Descarte consciente!</h2>
+                <p>Faça parte da equipe verde. Adote nosso app de coleta seletiva e recicle com facilidade!</p>
+                    <!--botão de registro-->
+                <button class="buttonClass" href="#"><a href="register.html">Começar</a></button>
+            </div>
+
+            <img src="../images/catadora.png" alt="">
+        </div>
+    </aside>
+
+    <!--coloquei esse id mas só pra organizar, o nome "principal" não tem nenhuma ligação-->
+    <div id="Principal">
+
+        <!-- conteúdo de como funcionaria o site-->
+        <h1>Como funciona</h1>
+        <main id="ComoFunciona">
+            <img class="imgFunciona" src="../images/catador.png" alt="">
+            
+            <div class="sliderdiv">
+                <div class="slider-container">
+                    <div class="card-slider">
+                        <div class="card">
+                            <h2>1. Preparando</h2>
+                            <p>Limpe e prepare os materiais a serem descartados.</p>
+                            <img src="../images/imagecard1.png" alt="Image 1">
+                        </div>
+                        <div class="card">
+                            <h2>2. Descartando</h2>
+                            <p>Registre a coleta e seus detalhes ao descartar.<br>Catadores serão procurados e notificados.</p>
+                            <img src="../images/imagecard2.png" alt="Image 2">
+                        
+                        </div>
+                        <div class="card">
+                            <h2>3. Coleta Realizada</h2>
+                            <p>Pronto. Agora esperar o Catador confirmado buscar o descarte.</p>
+                            <img src="../images/imagecard3.png" alt="Image 3">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="../scripts/principal.js"></script>
+        </main>
+    </div>
+    
+    <!--
+    <footer>
+        <p>Rodapé da Página</p>
+    </footer>
+    -->
+
+</body>
+</html>
